@@ -60,7 +60,7 @@ app.get('/get-discount', async (req, res) => {
 
 
         // Send response
-        res.json({ discount: discount});
+        res.json({ discount: discount, geoResponse: geoResponse });
     } catch (error) {
         res.status(500).send('Error processing request');
     }
