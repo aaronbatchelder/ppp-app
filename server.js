@@ -56,11 +56,11 @@ app.get('/get-discount', async (req, res) => {
 
         // Get discount based on country or default to no discount
         const discount = discounts[geoResponse.countryCode] || 'No discount available';
-        const countryName = geoResponse.country; // remove if causes issues
+        //const countryName = geoResponse.country; // remove if causes issues
 
 
         // Send response
-        res.json({ discount: discount, country: countryName });
+        res.json({ discount: discount});
     } catch (error) {
         res.status(500).send('Error processing request');
     }
