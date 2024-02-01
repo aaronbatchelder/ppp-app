@@ -6,7 +6,8 @@
     padding: 10px;
     border: 1px solid #ddd;
     position: fixed;
-    bottom: 0;
+    top: 0;
+    left: 0;
     width: 100%;
     box-shadow: 0px -1px 5px rgba(0,0,0,0.2);
     z-index: 1000;
