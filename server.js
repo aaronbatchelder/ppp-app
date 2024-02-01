@@ -9,7 +9,7 @@ app.use(express.static('public'));
 app.get('/get-discount', async (req, res) => {
     try {
         
-        const testIp = '71.181.68.248'; // Replace with an IP for testing
+       // const testIp = '71.181.68.248'; // Replace with an IP for testing
 
         // Get client's IP address from the request
        let ip = req.headers['x-forwarded-for'] || req.connection.remoteAddress;

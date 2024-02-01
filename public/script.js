@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Function to fetch discount data based on IP
     function fetchDiscount() {
-        fetch('http://localhost:3000/get-discount') // Update with your server's address
+        fetch('https://ppp-server-9ec0fd68f4a5.herokuapp.com//get-discount') // Update with your server's address
             .then(response => response.json())
             .then(data => {
                 banner.innerHTML = `Special Offer for You: ${data.discount}`;
