@@ -4,7 +4,7 @@ const request = require('request-promise');
 const app = express();
 
 app.use(cors());
-app.use(express.static('public'));
+// app.use(express.static('public'));
 
 app.get('/get-discount', async (req, res) => {
     try {
