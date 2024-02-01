@@ -26,6 +26,9 @@ document.addEventListener('DOMContentLoaded', function() {
 
                 banner.innerHTML = `Hello! 👋 You are in ${geoResponse.country} ${countryFlag}. It looks like your region is supported by Parity Purchasing Power. Use code 'PPP&ME' to get ${data.discount} off!`;
                 banner.style.display = 'block';
+                console.log(countryCode);
+                console.log(geoResponse);
+                console.log(countryFlag)
             })
             .catch(error => {
                 console.error('Error fetching discount:', error);
