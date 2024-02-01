@@ -1,0 +1,13 @@
+/* style.css */
+#discount-banner {
+    background-color: #f4f4f4;
+    color: black;
+    text-align: center;
+    padding: 10px;
+    border: 1px solid #ddd;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0px -1px 5px rgba(0,0,0,0.2);
+    z-index: 1000;
+}
