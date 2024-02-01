@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', function() {
         fetch('https://ppp-server-9ec0fd68f4a5.herokuapp.com/get-discount') // Update with your server's address
             .then(response => response.json())
             .then(data => {
-                banner.innerHTML = `Hello! 👋 It looks like your region is supported by Parity Purchasing Power. Use code 'PPP&ME' to get ${data.discount} off!`;
+                banner.innerHTML = `Hello! 👋 It looks like your region of ${countryName} is supported by Parity Purchasing Power. Use code 'PPP&ME' to get ${data.discount} off!`;
                 banner.style.display = 'block';
             })
             .catch(error => {
