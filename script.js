@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 // Get the emoji flag for the country code
                 const countryFlag = countryCodeToFlag(countryCode);
 
-                banner.innerHTML = `Hello! 👋 It looks like you're in ${geoResponse.country} ${countryFlag}. Great news! Your region supports parity purchasing power. Use code 'PPP&ME' to get ${data.discount} off!`;
+                banner.innerHTML = `Hello! 👋 Great news! We support purchasing power parity in your country. ${geoResponse.country} ${countryFlag} customers are getting a ${data.discount} discount. Use code 'PPP&ME' at checkout.`;
                 banner.style.display = 'block';
                 console.log(countryCode);
                 console.log(geoResponse);
