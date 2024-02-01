@@ -1,6 +1,7 @@
 /* style.css */
 #discount-banner {
     background-color: #f4f4f4;
+    display: block;
     color: black;
     text-align: center;
     padding: 10px;
