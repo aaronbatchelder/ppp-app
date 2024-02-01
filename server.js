@@ -25,6 +25,7 @@ app.get('/get-discount', async (req, res) => {
             json: true
         });
 
+
         // Define discounts for countries
         const discounts = {
             'US': `${Math.floor(Math.random() * 26) + 5}%`, // United States
@@ -59,7 +60,7 @@ app.get('/get-discount', async (req, res) => {
 
 
         // Send response
-        res.json({ discount: discount });
+        res.json({ discount: discount, country: countryName });
     } catch (error) {
         res.status(500).send('Error processing request');
     }
