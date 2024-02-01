@@ -28,7 +28,7 @@ app.get('/get-discount', async (req, res) => {
 
         // Define discounts for countries
         const discounts = {
-            'US': `${Math.floor(Math.random() * 26) + 5}%`, // United States
+            'US': `10%`, // United States
             'CA': `${Math.floor(Math.random() * 26) + 5}%`, // Canada
             'MX': `${Math.floor(Math.random() * 26) + 5}%`, // Mexico
             'BZ': `${Math.floor(Math.random() * 26) + 5}%`, // Belize
@@ -40,7 +40,7 @@ app.get('/get-discount', async (req, res) => {
             'PA': `${Math.floor(Math.random() * 26) + 5}%`, // Panama
             'AR': `${Math.floor(Math.random() * 26) + 5}%`, // Argentina
             'BO': `${Math.floor(Math.random() * 26) + 5}%`, // Bolivia
-            'BR': `${Math.floor(Math.random() * 26) + 5}%`, // Brazil
+            'BR': `50%`, // Brazil
             'CL': `${Math.floor(Math.random() * 26) + 5}%`, // Chile
             'CO': `${Math.floor(Math.random() * 26) + 5}%`, // Colombia
             'EC': `${Math.floor(Math.random() * 26) + 5}%`, // Ecuador
