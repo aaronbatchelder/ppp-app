@@ -50,7 +50,7 @@ app.get('/get-discount', async (req, res) => {
             'UY': `${Math.floor(Math.random() * 26) + 5}%`, // Uruguay
             'VE': `${Math.floor(Math.random() * 26) + 5}%`  // Venezuela
         };
-        
+
         
 
         // Get discount based on country or default to no discount
