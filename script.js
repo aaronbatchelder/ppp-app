@@ -24,21 +24,16 @@ document.addEventListener('DOMContentLoaded', function() {
                 // Get the emoji flag for the country code
                 const countryFlag = countryCodeToFlag(countryCode);
 
-                // Update this selector to target the navigation bar element on different websites
-                const navigationBar = document.querySelector('.navbar');
+                // Target the navigation bar by its ID
+                const navigationBar = document.getElementById('navbar');
 
-                // Check if the navigation bar exists on the current website
                 if (navigationBar) {
                     // Position the banner relative to the navigation bar
                     navigationBar.appendChild(banner);
-                    banner.innerHTML = `Hello! 👋 Great news! We support purchasing power parity in your country. ${geoResponse.country} ${countryFlag} customers are getting a ${data.discount} discount. Use code 'PPP&ME' at checkout.`;
-                    banner.style.display = 'block';
-                } else {
-                    // If the navigation bar doesn't exist, simply display the banner
-                    banner.innerHTML = `Hello! 👋 Great news! We support purchasing power parity in your country. ${geoResponse.country} ${countryFlag} customers are getting a ${data.discount} discount. Use code 'PPP&ME' at checkout.`;
-                    banner.style.display = 'block';
                 }
 
+                banner.innerHTML = `Hello! 👋 Great news! We support purchasing power parity in your country. ${geoResponse.country} ${countryFlag} customers are getting a ${data.discount} discount. Use code 'PPP&ME' at checkout.`;
+                banner.style.display = 'block';
                 console.log(countryCode);
                 console.log(geoResponse);
                 console.log(countryFlag);
